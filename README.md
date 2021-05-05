@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# VarrockGE Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+VarrockGE is a full stack web application built with React, Express, and PostgresSQL that allows users to buy, sell, and collect video game collectibles. This serves as the front-end repository. The backend API sever can be found at https://github.com/mcdermottjesse/VarrockGE-api
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* Users can buy and sell video game collectibles.
+* When a video game collectible is bought by a user, it is removed from the marketplace.
+* The purchase history of a video game collectible is updated when it is purchased from the marketplace.
+* Users can sell video game collectibles that they own on the marketplace where they can set their own asking price.
+* Users can create and edit collections that contain their video game collectibles.
+* Admins can create new video game collectibles.
 
-### `npm start`
+## Project Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Fork this repository, then clone your fork of this repository.
+2. Crate the .env in the root of the Varrock-api directory. The .env file should have the following content:
+`DB_HOST=localhost
+DB_USER=vagrant
+DB_PASS=123
+DB_NAME=final_project
+DB_PORT=5432`
+3. Install all dependencies:
+  `npm install`
+4. Install the POSTGRESQL database:
+  `npm run db:reset`
+5. Start the web server with:
+  `npm start`
+6. Open your web browser and enter the default URL:
+  `http://localhost:3000/`
+7. When finished, the server can be safely shut down with `control + c`.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Final Product
 
-### `npm test`
+## Future Development
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Search bar functionality.
+* Stripe checkout.
+* Subtract funds from user's account upon checkout.
+* Implement lootboxes for users to acquire random video game collectibles.
+* Host images.
+* Youtube video support to purchase video game moments.
+* Blockchain functionality.
+* Allow users to delete collections.
 
-### `npm run build`
+## Known Bugs/issues
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* When a video game collectible is sold on the marketplace, it is not removed from their collections.
+* Users are able to add video game collectibles to their cart that they already own.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* React 17.0.2 or above.
+* React Router DOM 5.2 or above.
+* Material UI 4.11.2 or above.
+* dotenv 8.2.0 or above.
