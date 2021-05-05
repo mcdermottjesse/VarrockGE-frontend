@@ -32,6 +32,11 @@ DB_PORT=5432`
 
 ## Final Product
 
+!["VarrockGE home page"](https://github.com/mcdermottjesse/VarrockGE-frontend/blob/master/docs/varrockGE_homepage.png)
+!["VarrockGE marketplace filter NFT's"](https://github.com/mcdermottjesse/VarrockGE-frontend/blob/master/docs/VarrockGE-Marketplace.png)
+!["VarrockGE main marketplace"](https://github.com/mcdermottjesse/VarrockGE-frontend/blob/master/docs/VarrockGE-Marketplace2.png)
+!["VarrockGE collections page"](https://github.com/mcdermottjesse/VarrockGE-frontend/blob/master/docs/VarrockGE-Collections.png)
+
 ## Future Development
 
 * Search bar functionality.
